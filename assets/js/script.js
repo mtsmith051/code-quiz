@@ -8,23 +8,53 @@ var questionIndex = 0;
 
 var question = [
   {
-    questionText: "What is your favorite color?",
-    questionChoices: ["Red", "White", "Blue"],
+    questionText: "Who is the main character?",
+    questionChoices: ["Goku", "Yamcha", "Bulma", "Master Roshi"],
     correctAnswer: 0
   },
 
   {
-    questionText: "What is your favorite food?",
-    questionChoices: ["Pizza", "Hotdogs", "Gyros"],
+    questionText: "How many World Martial Arts Tournaments has Goku won?",
+    questionChoices: ["3", "1", "5", "7"],
     correctAnswer: 2
   },
+
+  {
+    questionText: "Who defeated Goku in his first W.M.A.T.?",
+    questionChoices: ["Master Roshi", "Krillin", "Vegeta", "Jackie Chun"],
+    correctAnswer: 3
+  },
+
+  {
+    questionText: "Who was Goku's first Villain?",
+    questionChoices: ["Piccolo Jr", "Emperor Pilaf", "Garlic Jr.", "Freeza"],
+    correctAnswer: 1
+  },
+
+  {
+    questionText: "Who trained Goku?",
+    questionChoices: ["Oolong", "Chi Chi", "Master Roshi", "Shenron"],
+    correctAnswer: 2
+  },
+
+  {
+    questionText: "What does Goku transform into under a full moon?",
+    questionChoices: ["Giant Ape", "Giant Squid", "A Beautiful Girl", "A Sandwich"],
+    correctAnswer: 0
+  },
+
+  {
+    questionText: "What are Goku and the Gang searching for throughout the series?",
+    questionChoices: ["A genie", "A Leprechaun's Gold", "The meaning of life", "The Dragon Balls"],
+    correctAnswer: 3
+  }
 ]
 
 function displayQuestion() {
   mainEl.innerHTML = "";
 
   var h1El = document.createElement('h1');
-  h1El.textContent = questions[questionIndex].questionText;
+  h1El.textContent = question[questionIndex].questionText;
   mainEl.appendChild(h1El);
 
   var btnDivEl = document.
